@@ -6,12 +6,18 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1024</width>
+    <height>768</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Referee</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: #121212;
@@ -21,18 +27,44 @@ color: #fafafa;</string>
    <widget class="QLabel" name="cornerLabel">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>40</y>
-      <width>281</width>
-      <height>16</height>
+      <x>30</x>
+      <y>80</y>
+      <width>291</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #fafafa;
+     <string notr="true">color: white;
+font-weight: 500;
+font-size: 20px;
+qproperty-alignment: 'AlignCenter'; 
 background-color: #121212;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mainPageTitle">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>0</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 32px;
+qproperty-alignment: 'AlignCenter'; 
+background-color: #121212;</string>
+    </property>
+    <property name="text">
+     <string>MMA REFEREE</string>
     </property>
    </widget>
   </widget>
@@ -41,8 +73,8 @@ background-color: #121212;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>36</height>
+     <width>1024</width>
+     <height>24</height>
     </rect>
    </property>
   </widget>
