@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CornerSelectionDialog</class>
+ <widget class="QDialog" name="CornerSelectionDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Select Corner</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #121212
+</string>
+  </property>
+  <widget class="QPushButton" name="redButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>260</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+color: white;
+font-weight: bold;
+font-size: 18px;
+border: 1px solid red;
+border-radius: 10px;</string>
+   </property>
+   <property name="text">
+    <string>Red Corner</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="blueButton">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>260</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>640</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: blue;
+color: white;
+font-weight: bold;
+font-size: 18px;
+border: 1px solid blue;
+border-radius: 10px;</string>
+   </property>
+   <property name="text">
+    <string>Blue Corner</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="appMainTitle">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>50</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+font-weight: bold;
+font-size: 32px;
+qproperty-alignment: 'AlignCenter'; 
+background-color: #121212;</string>
+   </property>
+   <property name="text">
+    <string>MMA REFEREE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>160</y>
+     <width>261</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #fafafa;
+background-color: #121212;</string>
+   </property>
+   <property name="text">
+    <string>Please select the corner where the count will be taken.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
