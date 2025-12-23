@@ -19,12 +19,12 @@ void MainWindow::setPlayerCorner(CornerSelectionDialog::Corner corner)
     playerCorner = corner;
 
     if (playerCorner == CornerSelectionDialog::Red) {
-        ui->cornerLabel->setText("Selected Corner: Red");
+        ui->cornerLabel->setText("Red");
     }
     else if (playerCorner == CornerSelectionDialog::Blue) {
-        ui->cornerLabel->setText("Selected Corner: Blue");
+        ui->cornerLabel->setText("Blue");
     } else {
-        ui->cornerLabel->setText("Selected Corner: None");
+        ui->cornerLabel->setText("None");
     }
 }
 
