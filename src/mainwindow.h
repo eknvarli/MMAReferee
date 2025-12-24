@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QKeyEvent>
+#include <QTimer>
 #include "cornerselectiondialog.h"
 
 QT_BEGIN_NAMESPACE
@@ -22,15 +23,28 @@ public:
 protected:
     void keyPressEvent(QKeyEvent *event) override;
 
+private slots:
+    void startMatch();
+    void pauseMatch();
+    void endMatch();
+    void onTimerTick();
+    void addActionFromUI();
+    void clearActions();
+
 private:
     Ui::MainWindow *ui;
+
+    CornerSelectionDialog::Corner playerCorner;
+
+    int remainingSeconds;
+    QTimer *matchTimer;
 
     int redScore = 0;
     int blueScore = 0;
 
     void updateScore();
-
-    CornerSelectionDialog::Corner playerCorner;
+    void updateTimerDisplay();
+    void addAction(const QString &action);
 };
 
 #endif // MAINWINDOW_H
